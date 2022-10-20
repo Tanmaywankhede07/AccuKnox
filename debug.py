@@ -1,5 +1,8 @@
-# Build a Tree
-## Why does this code go in an infinite loop?
+#a) Why does this code go in an infinite loop?
+#==> children was defined outside the __init__
+
+#b) Provide a fix
+#==> Below code is the fix of problem
 class Node:
     def __init__(self, name, parent=None):
         self.children = []
